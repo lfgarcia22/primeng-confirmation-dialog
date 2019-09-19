@@ -1,0 +1,28 @@
+<h3 class="ui-g ui-g-12 text-center line-height-double" *ngIf="!loading && !saving">{{messages.message}}</h3>
+
+<div class="text-center" *ngIf="loading && saving">
+  <p-progressSpinner></p-progressSpinner>
+</div>
+
+<div class="ui-g text-center" *ngIf="!loading && saving">
+  <i class="ui-g-12 icon-finished {{icon}}" [ngClass]="{'ui-text-success': valid, 'ui-text-danger': !valid}"
+    [@fadeInOut]></i>
+  <h3 class="ui-g-12" [ngClass]="{'ui-text-success': valid, 'ui-text-danger': !valid}">
+    <span *ngIf="valid">{{messages.success}}</span>
+    <span *ngIf="!valid">{{messages.failure}}</span>
+  </h3>
+</div>
+
+<hr>
+
+<div class="ui-g">
+  <div class="ui-g-12 text-right">
+    <p-button (click)="doClose()" styleClass="ui-button-secondary" [label]="finished ? messages.close : messages.cancel"
+      [disabled]="loading">
+    </p-button>
+
+    <p-button (click)="doSave()" styleClass="ui-button-success" [label]="messages.save" [disabled]="loading"
+      *ngIf="!finished">
+    </p-button>
+  </div>
+</div>
