@@ -1,23 +1,23 @@
 # Service: primeng-confirmation-dialog
 
-Confirmation Dialog for Angular and PrimeNG.
+Dialogo de confirmación para Angular y PrimeNG.
 
-_Read this in other language: [Spanish](https://github.com/lfgarcia22/primeng-confirmation-dialog/blob/snapshot/README.es.md)_
+_Leer en otro idioma: [Inglés](https://github.com/lfgarcia22/primeng-confirmation-dialog/blob/snapshot/README.md)_
 
-## Requirements
+## Requerimientos
 
 * [Angular](https://angular.io/guide/quickstart)
 * [PrimeNG](https://www.primefaces.org/primeng/#/setup)
 
-## Installing
+## Instalación
 
-1. Add NPM package into your project:
+1. Agregar el paquete a tu proyecto:
 
   ```
   npm install @von-development-studio/primeng-confirmation-dialog --save
   ```
 
-2. Add _**ConfirmationDialogModule**_ and _**ConfirmationDialogService**_ into `imports` and `providers` section
+2. Agrega el módulo _**ConfirmationDialogModule**_ y _**ConfirmationDialogService**_ en las secciones `imports` y `providers`
 
   ```typescript
   import { ConfirmationDialogModule, ConfirmationDialogService } from '@von-development-studio/primeng-confirmation-dialog';
@@ -39,9 +39,9 @@ _Read this in other language: [Spanish](https://github.com/lfgarcia22/primeng-co
   export class AppModule { }
   ```
 
-## Usage
+## Uso
 
-1. Add service in constructor:
+1. Agrega el servicion en el constructor:
 
   ```typescript
   import { ConfirmationDialogService } from '@von-development-studio/primeng-confirmation-dialog';
@@ -53,7 +53,7 @@ _Read this in other language: [Spanish](https://github.com/lfgarcia22/primeng-co
   ) { }
   ```
 
-1. Call service, `open` method, with configuration parameter:
+2. Llama el método `open` en el servicio con las configuraciones necesarias:
 
   ```typescript
   this.confirmationDialog.open<any>({
