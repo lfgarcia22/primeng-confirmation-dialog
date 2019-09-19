@@ -1,0 +1,29 @@
+{
+  "name": "@von-development-studio/primeng-confirmation-dialog",
+  "version": "0.0.1-SNAPSHOT-9",
+  "description": "Confirmation dialog for Angular with PrimeNG.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lfgarcia22/primeng-confirmation-dialog.git"
+  },
+  "bugs": {
+    "urls": "https://github.com/lfgarcia22/primeng-confirmation-dialog/issues"
+  },
+  "homepage": "https://github.com/lfgarcia22/primeng-confirmation-dialog",
+  "keywords": [
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular 8",
+    "primeng",
+    "dialog",
+    "confirmation dialog"
+  ],
+  "author": "Luis García Castro",
+  "license": "ISC",
+  "peerDependencies": {
+    "@angular/common": "^8.2.6",
+    "@angular/core": "^8.2.6",
+    "primeng": "^8.0.3"
+  }
+}
